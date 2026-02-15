@@ -118,6 +118,12 @@ npx @modelcontextprotocol/inspector node src/index.js
 
 mcp-anylist is built using AI-assisted development with structured engineering practices. Every feature follows a full software development lifecycle: requirements are captured in a living roadmap, architecture decisions and lessons learned are documented in session context files, and a shared set of design standards (coding conventions, style guides, and testing standards) governs consistency across projects. AI tooling accelerates implementation, but the engineering rigor is human-driven: clear specifications, incremental commits, extracted and tested pure logic, CI/CD gates (lint + test on every push), and a release script that enforces quality checks before any build ships. The methodology treats AI as a collaborator operating within well-defined constraints, not as an autonomous agent — the standards, architecture documentation, and accumulated project memory are what make AI-assisted development effective at scale.
 
+## Platform Support
+
+This project is developed and tested on **macOS**. It should work on Linux, but Windows compatibility has not been tested.
+
+If you're on a different platform and encounter issues, or would like to contribute platform-specific improvements, please fork and submit a PR. Contributions are welcome!
+
 ## Disclaimer
 
 This project uses [anylist-api](https://github.com/codetheweb/anylist), an unofficial reverse-engineered API wrapper. It is not affiliated with or endorsed by AnyList.

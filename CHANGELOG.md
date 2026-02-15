@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-02-15
+
+### Added
+
+- Interactive setup command: `npx mcp-anylist --setup`
+- Encrypted credential storage (no plaintext passwords in config)
+- Help command: `npx mcp-anylist --help`
+- GitHub Actions CI workflow (tests on macOS and Ubuntu, Node 18/20/22)
+- Platform support disclaimer in README
+
+### Changed
+
+- Simplified Quick Start in README (3 steps instead of complex config)
+- Credentials now stored at `~/.mcp-anylist-credentials` by default
+- Environment variables now optional (for advanced users only)
+
 ## [0.1.0] - 2026-02-15
 
 ### Added
@@ -36,4 +52,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Response formatters for clean JSON output
   - Date utilities for YYYY-MM-DD handling
 - Unit tests for all pure library functions (66 tests)
-- Documentation (README, CLAUDE.md, ARCHITECTURE.md, ROADMAP.md)
+- Documentation (README, ROADMAP.md)

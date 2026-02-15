@@ -23,7 +23,10 @@ MCP server that enables Claude to interact with AnyList meal planning, recipes, 
 - [x] Recipe tools (2 recipe tools)
 - [x] Shopping list tools (4 list tools)
 - [x] Unit tests for lib modules (66 tests passing)
-- [x] Documentation (README, CLAUDE.md, ARCHITECTURE.md)
+- [x] Documentation (README, ROADMAP.md)
+- [x] Interactive setup command (`--setup`)
+- [x] Encrypted credential storage
+- [x] GitHub Actions CI (macOS + Ubuntu, Node 18/20/22)
 
 ### In Progress
 
@@ -41,6 +44,7 @@ MCP server that enables Claude to interact with AnyList meal planning, recipes, 
 
 - [ ] Add `anylist_check_item` tool for checking/unchecking items
 - [ ] Add date range helpers for common queries (this week, next week)
+- [ ] Windows compatibility testing
 
 ### Medium Priority
 
@@ -53,14 +57,16 @@ MCP server that enables Claude to interact with AnyList meal planning, recipes, 
 - [ ] Recipe scaling
 - [ ] Shopping list from recipe ingredients
 - [ ] Category management
+- [ ] macOS Keychain integration for credentials
 
 ## Technical Debt
 
-- [ ] Update anylist dependency from local to npm when ready
+- [ ] Update anylist dependency to upstream npm when PR merged
 - [ ] Add integration test script for manual verification
 
 ## Version History
 
 | Version | Date | Highlights |
 |---------|------|------------|
+| 0.1.1 | 2026-02-15 | Interactive setup, CI/CD, simplified config |
 | 0.1.0 | 2026-02-15 | Initial implementation with 14 tools |
