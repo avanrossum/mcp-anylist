@@ -12,9 +12,11 @@ npx mcp-anylist --setup
 
 This will prompt for your AnyList email and password, then store your credentials securely.
 
-### 2. Add to Claude Desktop
+### 2. Add to Claude
 
-Add this to `~/Library/Application Support/Claude/claude_desktop_config.json`:
+#### Claude Code (CLI or Desktop) — Recommended
+
+Add to your project's `.mcp.json` (for project-specific) or `~/.claude/settings.json` (for global):
 
 ```json
 {
@@ -27,9 +29,26 @@ Add this to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 }
 ```
 
-### 3. Restart Claude Desktop
+This is ideal for meal planning projects where you have control docs (preferences, staples, etc.) in your project's `CLAUDE.md`.
 
-That's it! You can now ask Claude to manage your meals and shopping lists.
+#### Claude Desktop
+
+Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "anylist": {
+      "command": "npx",
+      "args": ["mcp-anylist"]
+    }
+  }
+}
+```
+
+### 3. Restart Claude
+
+Restart Claude Code or Claude Desktop. That's it! You can now ask Claude to manage your meals and shopping lists.
 
 ## Available Tools
 
