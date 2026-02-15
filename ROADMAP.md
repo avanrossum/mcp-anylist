@@ -32,6 +32,7 @@ MCP server that enables Claude to interact with AnyList meal planning, recipes, 
 
 - [ ] Test with real AnyList credentials
 - [ ] Test with Claude Desktop
+- [ ] Complete code review (DRY, separation of concerns, best practices, sane tests)
 
 ### Up Next
 
