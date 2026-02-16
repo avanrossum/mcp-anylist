@@ -8,7 +8,7 @@ MCP server that enables Claude to interact with AnyList meal planning, recipes, 
 
 - **Meal Planning** - CRUD for calendar events
 - **Labels** - Manage meal categories (Breakfast, Lunch, Dinner)
-- **Recipes** - Read recipes and collections
+- **Recipes** - Read recipes and collections (write tools coming)
 - **Shopping Lists** - Basic list management
 
 ## Current Sprint
@@ -20,7 +20,7 @@ MCP server that enables Claude to interact with AnyList meal planning, recipes, 
 - [x] MCP server setup (server.js, index.js)
 - [x] Meal planning tools (4 event tools)
 - [x] Label tools (4 label tools)
-- [x] Recipe tools (2 recipe tools)
+- [x] Recipe tools (2 read-only tools)
 - [x] Shopping list tools (4 list tools)
 - [x] Unit tests for lib modules (66 tests passing)
 - [x] Documentation (README, ROADMAP.md)
@@ -31,11 +31,13 @@ MCP server that enables Claude to interact with AnyList meal planning, recipes, 
 ### In Progress
 
 - [ ] Test with real AnyList credentials
-- [ ] Test with Claude Desktop
+- [ ] Test with Claude Desktop / Claude Code
 - [ ] Complete code review (DRY, separation of concerns, best practices, sane tests)
 
 ### Up Next
 
+- [ ] **Recipe CRUD tools** - `anylist_create_recipe`, `anylist_update_recipe`, `anylist_delete_recipe`
+- [ ] Verify anylist-api supports recipe write operations (may need PR)
 - [ ] Publish to npm
 - [ ] Submit to MCP registry
 
@@ -43,15 +45,16 @@ MCP server that enables Claude to interact with AnyList meal planning, recipes, 
 
 ### High Priority
 
+- [ ] Recipe creation tool (for AI-generated recipes)
+- [ ] Recipe update tool
 - [ ] Add `anylist_check_item` tool for checking/unchecking items
-- [ ] Add date range helpers for common queries (this week, next week)
 - [ ] Windows compatibility testing
 
 ### Medium Priority
 
-- [ ] Recipe creation tool
 - [ ] Recipe search by ingredient
 - [ ] Bulk meal planning (plan a week at once)
+- [ ] Date range helpers for common queries (this week, next week)
 
 ### Low Priority / Ideas
 
